@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sunrise Community Clinic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sunrise Community Clinic</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Book an Appointment</h2>
+      <p>
+        Fill out the form below to request an appointment, and our front
+        desk team will confirm your booking by phone or email.
+      </p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div>
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="general">General Consultation</option>
+            <option value="maternal">Maternal &amp; Child Health</option>
+            <option value="nursing">Nursing Care</option>
+            <option value="screening">Health Screening</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Additional Details</label>
+          <textarea id="message" name="message" rows="4"
+            placeholder="Preferred date, symptoms, or other notes"></textarea>
+        </div>
+
+        <button type="submit">Request Appointment</button>
+      </form>
+    </section>
+
+    <aside aria-label="Other contact options">
+      <h2>Reach Us Directly</h2>
+      <p>
+        Phone: 0700 000 000<br>
+        Email: info@sunriseclinic.example<br>
+        Address: Mukono Town, Central Region, Uganda
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sunrise Community Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
